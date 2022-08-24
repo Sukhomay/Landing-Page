@@ -4,33 +4,58 @@ body {
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
+    margin-left: 2rem;
+    margin-right: 2rem;
     color: #fff;
     text-align: left;
     background-color: #000000;
     background-attachment: fixed;
   }
 
+  #pages-option
+  {
+    display: flex;
+    flex-direction: column;
 
-  
+  }
 
+  #landing-login-signup
+  {
+    margin-left: 50rem;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+  }
 
+  .landing-content
+  {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10rem;
+  }
+
+  .landing-subsection
+  {
+    display: flex;
+    flex-direction: row;
+  }
   
   .landing-page-image
   {
-    -webkit-mask:radial-gradient(circle at 40% 80%, transparent , #fff 50%);
-    mask:radial-gradient(circle at 40% 80%, transparent , #fff 50%);
+    /* -webkit-mask:radial-gradient(circle at 80% 10% -10%, transparent , #000 100%);
+    mask:radial-gradient(circle at 80% 10%, transparent , #000 100%); */
+
+    margin-right: 3rem;
   }
 
-  #landing-page-image1
-  {
-    float: left;
-  }
- 
-  #landing-page-image2
-  {
-    position: absolute;
-    right: 10px;
-    float: right;
+  @media (max-width: 800px) {
+    .landing-subsection {
+      flex-direction: column;
+    }
+    #landing-login-signup
+    {
+      flex-direction: column;
+    }
   }
 
   /*
@@ -42,11 +67,6 @@ body {
   .animated-button1
   {
     border-radius: 10%;
-  }
-
-  #landing-login-signup
-  {
-    margin-left: 55rem;
   }
 
   .animated-button {
@@ -245,7 +265,7 @@ body {
     left: 0px;
     width: 100%;
     height: 100%;
-    background-color: #25d6a7;
+    background-color: #e2e4e4;
     opacity: 0;
     -webkit-transition: .2s opacity ease-in-out;
     transition: .2s opacity ease-in-out;
@@ -475,7 +495,7 @@ body {
   }
   
   .animated-button3 {
-    background: linear-gradient(-30deg, #3d3d0b 50%, #2b2b08 50%);
+    background: linear-gradient(-30deg, #4d4d4b 50%, #2b2b08 50%);
     padding: 20px 40px;
     margin: 12px;
     display: inline-block;
@@ -499,7 +519,7 @@ body {
     left: 0px;
     width: 100%;
     height: 100%;
-    background-color: #adad85;
+    background-color: #727270;
     opacity: 0;
     -webkit-transition: .2s opacity ease-in-out;
     transition: .2s opacity ease-in-out;
